@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 
 export interface CardInterface {
 	age: string
@@ -14,7 +14,7 @@ const Card: React.FC<CardInterface> = ({ age, title, description, direction = 'f
       <div className="order-1 w-5/12" />
       <div className=" flex items-center order-1 bg-primary w-7 h-7 rounded-full" />
 
-      <motion.div
+      <m.div
 				whileInView= {{ translateX: [-50, 0, -10, 0], opacity: [ 0, .8, .9, 1] }}
 				transition= {{ duration: 0.8 }}
 				className="order-1 bg-white rounded-2xl w-5/12 p-3 border-2"
@@ -26,7 +26,7 @@ const Card: React.FC<CardInterface> = ({ age, title, description, direction = 'f
         <p className="text-xs font-normal leading-snug tracking-wide text-gray-900 text-opacity-100">
 					{description}
 				</p>
-      </motion.div>
+      </m.div>
     </article>
 	)
 }
