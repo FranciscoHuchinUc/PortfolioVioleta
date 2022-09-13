@@ -1,4 +1,4 @@
-import { Brand, Footer, Layout, Navbar } from './components'
+import { Brand, Footer, Navbar } from './components'
 import { About, Home, Projects } from './pages'
 
 function App () {
@@ -8,6 +8,7 @@ function App () {
       <Home />
       <Brand />
       <About />
+      <Projects />
       <Footer />
     </>
   )
