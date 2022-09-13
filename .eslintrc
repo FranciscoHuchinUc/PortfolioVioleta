@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "curly": "error",
+    "no-empty": "off",
+    "@typescript-eslint/no-empty-interface": [
+      "off",
+      {
+        "allowSingleExtends": false
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}
