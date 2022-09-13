@@ -5,7 +5,7 @@ export interface CardInterface {
 	age: string
 	title: string
 	description: string
-	direction?: string
+	direction?: 'flex-row-reverse' | 'flex-row'
 }
 
 const Card: React.FC<CardInterface> = ({ age, title, description, direction = 'flex-row' }) => {
