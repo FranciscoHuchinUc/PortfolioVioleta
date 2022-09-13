@@ -1,6 +1,7 @@
 export * from './Brand/Social'
 export * from './Brand'
 export * from './Button'
+export * from './CardProject'
 export * from './Footer'
 export * from './ImagenHome/Card'
 export * from './ImagenHome'
